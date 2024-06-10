@@ -1,0 +1,8 @@
+package com.multi.spring.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class AOPController {
+
+}

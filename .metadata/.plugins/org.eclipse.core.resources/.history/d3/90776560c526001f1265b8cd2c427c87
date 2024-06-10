@@ -1,0 +1,23 @@
+package com.multi.spring.aoptest;
+
+public class BSite implements BSiteInterface {
+
+	@Override
+	public void search() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void basket() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void productOrder() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

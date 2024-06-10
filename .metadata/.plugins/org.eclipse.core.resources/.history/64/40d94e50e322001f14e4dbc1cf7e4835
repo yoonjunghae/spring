@@ -1,0 +1,24 @@
+package com.multi.spring.page.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/page")
+public class PageController {
+	
+
+	@RequestMapping("/main")
+	public String main() {
+		return "redirect:/index.jsp";
+	}
+
+	@GetMapping("/bbsMain") // 화면전환
+	public void pageMain() {
+
+	}
+	
+
+
+}

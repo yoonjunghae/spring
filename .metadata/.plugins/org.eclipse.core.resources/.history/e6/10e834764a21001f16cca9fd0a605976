@@ -1,0 +1,5 @@
+package com.multi.spring.member.controller;
+
+public class MemberController {
+
+}

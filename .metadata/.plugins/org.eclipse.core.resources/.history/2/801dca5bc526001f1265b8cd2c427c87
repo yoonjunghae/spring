@@ -1,0 +1,11 @@
+package com.multi.spring.aoptest;
+
+public class ASite implements ASiteInterface {
+
+	@Override
+	public void person() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

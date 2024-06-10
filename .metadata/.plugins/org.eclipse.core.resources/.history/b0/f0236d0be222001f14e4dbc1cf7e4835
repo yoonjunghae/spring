@@ -1,0 +1,43 @@
+package com.multi.spring.page.controller;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.multi.spring.file.service.FileService;
+import com.multi.spring.movie.model.dto.MovieDTO;
+
+@Controller
+@RequestMapping("/file")
+public class PageController {
+	
+
+	@Autowired
+	FileService fileService;
+
+	@RequestMapping("/main")
+	public String main() {
+		return "redirect:/index.jsp";
+	}
+
+	@GetMapping("/bbsMain") // 화면전환
+	public void pageMain() {
+
+	}
+
+
+}

@@ -1,0 +1,14 @@
+package com.multi.spring.aoptest;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ASite implements ASiteInterface {
+
+	@Override
+	public void person() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

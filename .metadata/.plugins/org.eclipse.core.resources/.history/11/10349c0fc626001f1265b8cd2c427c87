@@ -1,0 +1,5 @@
+package com.multi.spring.common.aop;
+
+public class AOPClass {
+
+}

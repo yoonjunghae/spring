@@ -1,0 +1,24 @@
+package com.multi.spring.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.multi.spring.member.model.dto.MemberDTO;
+
+@Controller
+public class MemberController {
+	
+	@RequestMapping("/insert") //insert url 넣어줌 
+	public void insert (@ModelAttribute MemberDTO memberDTO) {
+		
+		memberDAO.insert(memberDTO);
+		
+		
+		
+		
+		//return "insert"; //url 경로가 같은 경우에는 void
+	}
+	
+
+}

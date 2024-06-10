@@ -1,0 +1,5 @@
+package com.multi.spring.page.service;
+
+public class BoardServiceImpl {
+
+}

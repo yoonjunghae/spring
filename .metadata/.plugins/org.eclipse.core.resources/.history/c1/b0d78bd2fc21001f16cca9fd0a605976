@@ -1,0 +1,80 @@
+package com.multi.spring.board.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.multi.spring.board.service.BoardService;
+import com.multi.spring.board.model.dto.BoardDTO;
+
+@Controller
+@RequestMapping("/board")
+public class BoardController {
+	
+	private final BoardService boardService;
+	@Autowired
+	public BoardController(BoardService boardService) {
+		this.boardService = boardService;
+	}
+	
+	@RequestMapping("/main")
+	public String main() {
+		return "redirect:/index.jsp";
+	}
+	
+	@RequestMapping("/bbs")
+	public void boardMain() {
+	}
+	
+	@RequestMapping("/bbs_insert_form")
+	public void bbsInsertForm() {
+	}
+	
+	@RequestMapping("/bbs_delete_form")
+	public void bbsDeleteForm() {
+	}
+	
+	@RequestMapping("/bbs_update_form")
+	public void bbsUpdateForm() {
+	}
+	
+	@PostMapping("/insert")
+	public String insertBoard(BoardDTO boardDTO) throws Exception {
+		boardService.insertBoard(boardDTO);
+		return "redirect:/board/bbs_list";
+	}
+	
+    @GetMapping("/bbs_list")
+    public void selectList(Model model) throws Exception {
+        List<BoardDTO> list = boardService.selectBoardList();
+        model.addAttribute("list", list);
+    }
+	
+    @GetMapping("/selectOne")
+    public String getBoard(@RequestParam("no") int no, Model model) throws Exception {
+        BoardDTO boardDTO = boardService.selectBoard(no);
+        model.addAttribute("bag", boardDTO);
+        return "board/bbs_one_form";
+    }
+    
+	@PostMapping("/delete")
+	public String deleteBoard(int no) throws Exception {
+		boardService.deleteBoard(no);
+		return "redirect:/board/bbs_list";
+	}
+	
+	@PostMapping("/update")
+	public String updateBoard(BoardDTO boardDTO) throws Exception {
+		boardService.updateBoard(boardDTO);
+		return "redirect:/board/bbs_list";
+	}
+    
+    
+    
+}

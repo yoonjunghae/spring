@@ -1,0 +1,15 @@
+package com.multi.spring.page.model.dao;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.multi.spring.movie.model.dto.MovieDTO;
+
+@Repository
+public class PageDao {
+	
+	public int insertMovie(SqlSessionTemplate sqlSession, MovieDTO movieDTO) {
+		return sqlSession.insert("movieMapper.insertMovie", movieDTO);
+	}
+
+}

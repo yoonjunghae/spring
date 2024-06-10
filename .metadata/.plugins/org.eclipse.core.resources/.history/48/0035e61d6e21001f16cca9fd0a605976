@@ -1,0 +1,13 @@
+package com.multi.spring.member.service;
+
+import java.awt.List;
+
+import com.multi.spring.member.model.dto.MemberDTO;
+
+public interface MemberService {
+	
+	void insertMember(MemberDTO memberDTO) throws Exception;
+
+	List<MemberDTO> selectList() throws Exception;
+
+}
