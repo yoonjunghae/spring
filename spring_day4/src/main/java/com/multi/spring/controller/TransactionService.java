@@ -9,6 +9,8 @@ import com.multi.spring.model.dao.BbsDAO;
 import com.multi.spring.model.dao.MemberDAO;
 import com.multi.spring.model.dto.BbsDTO;
 import com.multi.spring.model.dto.MemberDTO;
+
+
 @EnableAspectJAutoProxy
 @Transactional(rollbackFor = {Exception.class})
 @Service
@@ -20,7 +22,7 @@ public class TransactionService {
 	@Autowired
 	BbsDAO dao2;
 	
-	@Transactional
+	 //root-context id="tran"
 	public int tran(MemberDTO  vo, BbsDTO vo2) throws Exception {
 		System.out.println("내가 호출되긴 한단다..!!!");
 		int result = 1;

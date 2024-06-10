@@ -2,16 +2,25 @@ package com.multi.spring.member.controller;
 
 import java.util.List;
 
+/* error-page
+ * exception-type
+ * ExceptionHandler
+ * ControllerAdvice + ExceptionHandler
+ * */
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.BadSqlGrammarException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.multi.spring.member.model.dto.MemberDTO;
 import com.multi.spring.member.service.MemberService;
@@ -27,6 +36,25 @@ public class MemberController {
 	public MemberController(MemberService memberService) {
 		this.memberService = memberService;
 	}
+	
+	
+//	@ExceptionHandler(value = BadSqlGrammarException.class)// 쿼리를 붙이고 테스트
+//	public ModelAndView controllerExceptionHandler(Exception e) {
+//		
+//		e.printStackTrace();
+//		return new ModelAndView("common/errorPageServer").addObject("msg",e.getMessage());
+//	}
+//	
+	
+	@ExceptionHandler(value = Exception.class)
+	public ModelAndView controllerExceptionHandler(Exception e) {
+		
+		e.printStackTrace();
+		return new ModelAndView("common/errorPage").addObject("msg",e.getMessage());
+	}
+	
+	
+	
 
 	@RequestMapping("/main")
 	public String main() {
