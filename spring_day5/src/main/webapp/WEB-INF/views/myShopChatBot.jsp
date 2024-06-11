@@ -89,7 +89,7 @@
 	<br>
 	<img src=resources/img/chat1.png width=100 height=100><img src=resources/img/chat3.png width=400 height=100>
 	<div class="alert alert-danger" style="width: 500px;">
-		<div>챗 봇>> 1)팀선택  	2)응원</div>
+		<div>챗 봇>> 1)상품소개  	2)주문확인</div>
 		<br>
 		<div id="response">
 		
