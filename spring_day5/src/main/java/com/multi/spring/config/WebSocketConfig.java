@@ -7,7 +7,7 @@ import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBr
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 
 @Configuration //설정파일
-@EnableWebSocketMessageBroker
+@EnableWebSocketMessageBroker //@EnableWebSocketMessageBroker는 스프링 애플리케이션에서 웹 소켓 메시지 처리를 활성화하는 어노테이션 
 public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 
 	//채팅방 이름 설정

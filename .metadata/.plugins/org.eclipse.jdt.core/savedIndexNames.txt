@@ -19,7 +19,6 @@ INDEX VERSION 1.131+C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.
 3882262730.index
 1123287805.index
 3619185028.index
-3824723924.index
 2033137132.index
 3665232973.index
 2631265121.index

@@ -99,7 +99,7 @@
 		<tr>
 			<td><input type="text" class="form-control" id="text" style="width: 400px; background: yellow"></td>
 			<td><button id="sendMessage" onclick="sendMessage();"class="btn btn-primary">Send</button></td>
-		</tr>
+		</tr>                                      <!-- sendMessage 엔드포인트 설정 -->
 		</table>
 		</div>
 	</div>

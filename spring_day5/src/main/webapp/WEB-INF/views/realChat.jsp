@@ -17,6 +17,7 @@
 <script type="text/javascript" src="resources/js/webSocketSendToUserApp.js"></script>
 <script type="text/javascript">
 	var stompClient = null; //전역에서 써야 해서 맨위에서 선언
+	// STOMP (Simple Text Oriented Messaging Protocol)은 웹 소켓을 통해 메시징을 관리하기 위한 프로토콜
 	
 	function setConnected(connected) { //연결 여부에 따라 설정 
 		document.getElementById('connect').disabled = connected;
