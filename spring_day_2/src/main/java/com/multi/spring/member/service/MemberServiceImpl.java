@@ -66,6 +66,15 @@ public class MemberServiceImpl implements MemberService {
         }
 		
 	}
+	// 롤백안됨 - 롤백되게 하려면 @Transactional(rollbackFor = Exception.class) 설정
+				//throw new RuntimeException("회원정보 수정에 실패하였습니다"); // 롤백됨
+	
+	  /*Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException:
+			중복키 예외외에 다른 제약조건 위반상황에서도 발생  젤위에있다에러메세지 발생
+			https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/dao/DataIntegrityViolationException.html 
+			위 경로로 가서 보면 DataAccessException을 상속 받고 있고 들어가서 보면  액세스 API(예: JDBC)에 대한 세부 정보를 모른 채 발생한 오류 종류를 찾아 처리할 수 있도록 하는 것을 목표로하여 sqlexception 을 런타임으로  던져주고 있다
+			따라서 기본 롤백됨
+			 */
 
 	@Override
 	public MemberDTO selectMember(String id) throws Exception {

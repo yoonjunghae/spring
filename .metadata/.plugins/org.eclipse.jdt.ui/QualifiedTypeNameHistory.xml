@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="com.multi.spring.model.anno.dto.BeanFactory"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.lir.CompositeValue.Component"/>
     <fullyQualifiedTypeName name="com.multi.spring.model.anno.dto.Person"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
     <fullyQualifiedTypeName name="javax.annotation.Resource"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
@@ -27,4 +26,5 @@
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.multi.spring.file.model.dto.FileDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

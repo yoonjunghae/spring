@@ -1,9 +1,0 @@
-package com.multi.spring.member.service;
-
-import com.multi.spring.member.model.dto.MemberDTO;
-
-public class MemberService {
-	
-	void insertMember(MemberDTO memberDTO) throws Exception;
-
-}
