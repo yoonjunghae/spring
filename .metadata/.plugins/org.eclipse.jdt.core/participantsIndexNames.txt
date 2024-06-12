@@ -19,6 +19,8 @@ C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsear
 \spring_day1\src\main\java
 C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2642132813.index
 \practice\src\main\java
+C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\397491723.index
+\spring_day3\src\main\java
 C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\261548748.index
 \practice\src\main\java
 C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\425121498.index
@@ -29,6 +31,8 @@ C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsear
 \spring_day_2\src\main\java
 C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1787078808.index
 \basic\src\main\java
+C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1914181946.index
+\spring_day3\src\main\java
 C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\781704493.index
 \spring_day_1\src\main\java
 C:\workspace\multi\05_spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\950742052.index
