@@ -27,4 +27,7 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.multi.spring.file.model.dto.FileDTO"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.messaging.Message"/>
+    <fullyQualifiedTypeName name="com.multi.spring.chat.model.dto.Message"/>
+    <fullyQualifiedTypeName name="com.multi.spring.model.dto.Message"/>
 </qualifiedTypeNameHistroy>
